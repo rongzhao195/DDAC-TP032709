@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+body {
+  background-color: #641F53;
+  font-family: 'Lobster', cursive;
+  font-size: 180%;
+  color: #fff;
+  overflow: hidden;
+}
+
+#button {
+  cursor: pointer;
+  height: 120px;
+  width: 120px;
+  border-radius: 120px;
+  background-color: #541a45;
+  border: 1px solid #893d76;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+  transition: all 0.8s;
+  overflow: hidden;
+  transform: rotate(-90deg);
+}
+
+#button:hover {
+ border: 20px solid #541a45;
+  margin-left: -80px;
+  margin-top: -80px;
+  transform: rotate(0deg);
+}
+
+#button > div, #button > div > div, #button > div > div > div, #button > div > div > div > div, #button > div > div > div > div > div {
+  transition: margin-left 0.3s;
+  height: 120px;
+  width: 120px;
+  border-radius: 120px;
+  margin-left: -130px;
+}
+
+
+
+#button > div {
+  background-color: #06e278;
+}
+
+#button > div > div {
+  background-color: #06e2ab;
+  transition-delay: 0.1s;
+}
+
+#button > div > div > div {
+  background-color: #06a4e2;
+  transition-delay: 0.2s;
+}
+
+#button > div > div > div > div {
+  background-color: #5006e2;
+  transition-delay: 0.3s;
+}
+
+#button > div > div > div > div > div {
+  background-color: #893d76;
+    transition-delay: 0.4s;
+  text-align: center;
+  line-height: 120px;
+}
+
+
+#button:hover > div {
+  margin-left: 0px;
+}
+
+#button:hover > div > div {
+  margin-left: 0px;
+}
+
+#button:hover > div > div > div {
+  margin-left: 0px;
+}
+
+#button:hover > div > div > div > div {
+  margin-left: 0px;
+}
+
+#button:hover > div > div > div > div > div {
+  margin-left: 0px;
+}
+
+img {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  transition: all 1s cubic-bezier(0.105, 0.095, 0.470, 1.300);
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+#button ~ .dot1 {
+  margin-left: -10%;
+}
+
+#button:hover ~ .dot1 {
+  transform: rotate(90deg);
+  top: 0;
+  transition: all 1s cubic-bezier(0.105, 0.095, 0.470, 1.300);
+}
+
+#button:hover ~ .dot2 {
+  transform: rotate(-180deg);
+  top: 0;
+  transition-delay: 0.2s;
+  transition: all 0.7s cubic-bezier(0.105, 0.095, 0.470, 1.300);
+}
+
+#button:hover ~ .dot3 {
+  top: 0;
+  transform: rotate(-90deg);
+  transform: scale(2);
+  transition: all 0.5s cubic-bezier(0.105, 0.095, 0.470, 1.300);
+  transition-delay: 0.4s;
+}
